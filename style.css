@@ -1,0 +1,141 @@
+@font-face {
+    font-weight: 400;
+    font-family: 'OpenSans';
+    font-style: normal;
+    src: url('./fonts/OpenSans-Regular.ttf') format('truetype');
+  }
+  
+@font-face {
+    font-weight: 500;
+    font-family: 'Cormorant';
+    font-style: normal;
+    src: url('./fonts/Cormorant-Medium.ttf') format('truetype');
+  }
+
+@font-face {
+    font-weight: 600;
+    font-family: 'Cormorant';
+    font-style: normal;
+    src: url('./fonts/Cormorant-SemiBold.ttf') format('truetype');
+  }
+  
+@font-face {
+    font-weight: 700;
+    font-family: 'Cormorant';
+    font-style: normal;
+    src: url('./fonts/Cormorant-Bold.ttf') format('truetype');
+  }
+
+
+
+
+:root {
+    --color-dark: #1D2F30;
+    --color-white: #fff;
+    --color-primary-green: #BAE249;
+    --color-background: #1D2F30;
+    --color-green-text: #506829;
+    --color-background-shadow: #0B1919;
+    --color-grey: #899D9D;
+    --color-green-active: #688B05;
+    --color-green-hover:#91AC46;
+    --color-red: #E24949;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    font-family: 'OpenSans';
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.page {
+    /* padding-left: 165px;
+    padding-right: 165px;
+    margin-bottom: 60px; */
+    background-color: var(--color-background);
+}
+
+.intro {
+    background-image: url(images/b26d7fd790a80795819f918a2e149d00.jpg);
+    background-size: cover;
+}
+
+.navigation {
+    padding: 0 165px 0 146px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1D2F30;
+}
+
+.navigation__list {
+    display: flex;
+    gap: 64px;
+    list-style: none;
+    padding: 0;
+}
+
+.login__list {
+    list-style: none;
+    gap: 64px;
+    display: flex;
+    padding: 0px;
+}
+
+.intro__info {
+  padding: 0px 146px;
+  background-color: rgb(32, 52, 53, 0.8);
+}
+
+.intro__header {
+    font-family: Cormorant;
+    margin: 0;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: var(--color-white);
+}
+
+.text {
+    color: var(--color-white);
+    font-family: OpenSans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.intro__info-text {
+    padding-top: 100px;
+    padding-bottom: 115px;
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.button,
+.button_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: var(--color-primary-green);
+    font-family: Cormorant;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    cursor: pointer;
+}
